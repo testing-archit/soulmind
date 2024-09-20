@@ -1,0 +1,337 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navbar .logo span {
+    color: #f39c12; /* Gold color for the "Zone" part */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+/* Header Section */
+.header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: #f39c12;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Features Section */
+.features-section {
+    padding: 2rem 2rem;
+    background: #fff;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 2rem 2rem;
+    background: #f4f4f4;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 2rem 2rem;
+    background: #fff;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.pricing-item .pricing-btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.pricing-item .pricing-btn:hover {
+    background-color: #e67e22;
+}
+
+.premium {
+    border: 2px solid #f39c12;
+    background-color: #fff;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 2rem 2rem;
+    background: #f4f4f4;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-btn {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.faq-btn.active {
+    background: #e67e22;
+}
+
+.faq-content {
+    display: none;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 2rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.newsletter-section .form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-section input[type="email"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 0.5rem;
+}
+
+.newsletter-section button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-section button:hover {
+    background-color: #e67e22;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem 2rem;
+    background: #fff;
+}
+
+.contact-section .form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-section button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#tracker-modal {
+    display: none;
+    /* Other styles like background, width, height, etc. */
+}

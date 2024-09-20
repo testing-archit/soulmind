@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Zone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><h1>Calm <span>Zone</span></h1></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header" id="home">
+        <div class="header-content">
+            <h2>Welcome to Calm Zone</h2>
+            <p>Your safe space for mental wellness. Explore our resources and find peace today.</p>
+            <button class="cta-btn">Get Started</button>
+
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h3>Personalized Therapy</h3>
+                <p>Receive tailored therapy plans to meet your individual needs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Mental Health Tracker</h3>
+                <p>Track mood, stress levels, and other mental health metrics over time to identify patterns and triggers.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Emergency Help</h3>
+                <p>Quick access to emergency resources, hotlines, or a panic button in case users need immediate help.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonials">
+            <div class="testimonial-item">
+                <p>"Calm Zone has been a game-changer for me. The resources and support are top-notch!"</p>
+                <h4>Jane Doe</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"I feel more in control and at peace thanks to Calm Zone. Highly recommend it!"</p>
+                <h4>John Smith</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"An invaluable tool for managing stress and finding balance in life."</p>
+                <h4>Emily Johnson</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing">
+            <div class="pricing-item">
+                <h3>Basic Plan</h3>
+                <p>Access to basic resources and support.</p>
+                <p><strong>$9.99 / month</strong></p>
+                <a href="#contact" class="pricing-btn">Subscribe</a>
+            </div>
+            <div class="pricing-item premium">
+                <h3>Premium Plan</h3>
+                <p>All features including personalized therapy sessions.</p>
+                <p><strong>$29.99 / month</strong></p>
+                <a href="#contact" class="pricing-btn">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-btn">What is Calm Zone?</button>
+            <div class="faq-content">
+                <p>Calm Zone is a mental health support app designed to help users manage their mental wellness through various resources and personalized support.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-btn">How can I contact support?</button>
+            <div class="faq-content">
+                <p>You can contact our support team via the contact form on our website or through our 24/7 support chat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section" id="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest updates and tips.</p>
+        <form class="form" id="signup-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="form" id="contact-form">
+            <input type="text" id="contact-name" placeholder="Your Name" required>
+            <input type="email" id="contact-email" placeholder="Your Email" required>
+            <textarea id="contact-message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Calm Zone. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Form -->
+    <div id="tracker-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Mental Health Tracker</h2>
+            <form id="tracker-form">
+                <label for="mood">How are you feeling today?</label>
+                <select id="mood" name="mood" required>
+                    <option value="">Select your mood</option>
+                    <option value="happy">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sad">Sad</option>
+                </select>
+                
+                <label for="stress-level">How stressed are you?</label>
+                <select id="stress-level" name="stress-level" required>
+                    <option value="">Select your stress level</option>
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+                
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Any additional thoughts?" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
